@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   function factorial(num) {
+  if (num === 0 || num === 1)
+   document.write (1);
+  for (var i = num - 1; i >= 1; i--) {
+    num *= i;
+  }
+  alert(num);
+}
+factorial(10);
+// this wiil return the temperature in fahrenheit
+
+function temp(celsius){
+    var fahrenheit = (celsius*(9/5)+32);
+alert(fahrenheit);
+}
+temp(30);
+
+    function num(arr) {
+    //an array that will host the result of the 4 sub-arrays
+   var largestNumber = [0,0,0,0];
+   //FOR loop that will iterate through the arrays
+   for(var i = 0; i < arr.length; i++) {
+    //FOR loop that will iterate through the subarrays
+    for(var j= 0; j < arr[i].length; j++) {
+       if(arr[i][j] > largestNumber[i]) {         
+          largestNumber[i] = arr[i][j];
+        }
+    }
+ }
+ document.write (largestNumber);
+}
+num([[1,2,4,3], [7,9,6,3], [12,10,15,40], [30,20,100,11]]);
+    </script>
+    
+
+</body>
+</html>
